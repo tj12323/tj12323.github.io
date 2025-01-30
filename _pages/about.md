@@ -43,18 +43,14 @@ I have published 2 papers with <a href='https://scholar.google.com/citations?use
 [Deep Residual Learning for Image Recognition](https://openaccess.thecvf.com/content_cvpr_2016/papers/He_Deep_Residual_Learning_CVPR_2016_paper.pdf)
 
 **Kaiming He**, Xiangyu Zhang, Shaoqing Ren, Jian Sun
-
+<!--
 [**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=ivv7mSwAAAAJ&citation_for_view=ivv7mSwAAAAJ:d1gkVwhDpl0C) <strong><span class='show_paper_citations' data='ivv7mSwAAAAJ:d1gkVwhDpl0C'></span></strong>
 - An Eficient Numerical Method for Determining Main Operating Frequency of Mandelbrot Fractal Patch Antennas.
 </div>
 </div>
+-->
 
 - [An Eficient Numerical Method for Determining Main Operating Frequency of Mandelbrot Fractal Patch Antennas](https://ieeexplore.ieee.org/abstract/document/10221480/), Wei Jia Dou, Yuan Chu Xu, Hou Yi Ding, Mei Song Tong, **IEEE AP-S 2024**
-
-[**Project**](https://scholar.google.com/citations?view_op=view_citation&hl=zh-CN&user=ivv7mSwAAAAJ&citation_for_view=ivv7mSwAAAAJ:u-x6o8ySG0sC) <strong><span class='show_paper_citations' data='ivv7mSwAAAAJ:u-x6o8ySG0sC'></span></strong>
-- A Multiband Dipole Antenna Based on Mandelbrot Fractal Geometry.
-</div>
-</div>
 
 - [A Multiband Dipole Antenna Based on Mandelbrot Fractal Geometry](https://ieeexplore.ieee.org/abstract/document/10221480/), Wei Jia Dou, Ming Xuan Li, Yuan Chu Xu, Dan Ni Lin, Mei Song Tong, **PIERS 2023**
 
