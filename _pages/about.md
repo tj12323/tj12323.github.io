@@ -73,7 +73,7 @@ _The 14th International Conference on Learning Representations (ICLR), 2026_
     <span class="timeline-date">2025.02 - 2025.09</span>
     <div class="timeline-title">Research Intern at Tsinghua University</div>
     <p>
-      Advised by <a href="...">Prof. Jiwen Lu</a> and mentored by <a href="...">Dr. Wenzhao Zheng</a>.<br>
+      Advised by <a href="https://scholar.google.com/citations?user=TN8uDQoAAAAJ&hl=zh-CN&oi=ao">Prof. Jiwen Lu</a> and mentored by <a href="https://wzzheng.net/">Dr. Wenzhao Zheng</a>.<br>
       Topic: <b>3D Spatial Geometric Consistency in Video Generation</b>.
     </p>
     <ul>
@@ -86,7 +86,7 @@ _The 14th International Conference on Learning Representations (ICLR), 2026_
     <span class="timeline-date">2024.09 - Present</span>
     <div class="timeline-title">Research Intern at Tongji University</div>
     <p>
-      Advised by <a href="...">Prof. Yi Bin</a>.<br>
+      Advised by <a href="https://scholar.google.com/citations?user=KDdkZKQAAAAJ&hl=zh-CN&oi=ao">Prof. Yi Bin</a>.<br>
       Topic: <b>Open-Vocabulary 3D Scene Understanding</b>.
     </p>
     <ul>
