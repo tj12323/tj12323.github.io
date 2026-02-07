@@ -32,8 +32,12 @@ Specifically, my future research at Fudan University will focus on:
 
 # 🔥 News
 
-- _2026.01_: &nbsp;🎉🎉 One paper (GeoPurify) has been accepted by ICLR 2026!
-- _2025.09_: &nbsp;🎉🎉 I successfully received the admission offer for the Direct Ph.D. program at Fudan University.
+<div class="news-box">
+<ul>
+  <li><i>2026.01</i>: &nbsp;🎉🎉 One paper (<b>GeoPurify</b>) has been accepted by <b>ICLR 2026</b>!</li>
+  <li><i>2025.09</i>: &nbsp;🎉🎉 I successfully received the admission offer for the Direct Ph.D. program at <b>Fudan University</b>.</li>
+</ul>
+</div>
 
 <span id="-publications"></span>
 
@@ -63,17 +67,35 @@ _The 14th International Conference on Learning Representations (ICLR), 2026_
 
 # 💻 Research Experience
 
-- 2025.02 - 2025.09: Research Intern at Tsinghua University
-  - Advised by [Prof. Jiwen Lu](https://scholar.google.com/citations?user=TN8uDQoAAAAJ&hl=zh-CN&oi=ao) and mentored by [Dr. Wenzhao Zheng](https://wzzheng.net/).
-  - _Topic_: 3D Spatial Geometric Consistency in Video Generation.
-  - Identified that existing fidelity-centric metrics (e.g., FVD) fail to capture geometric distortions in generative videos.
-  - Proposed SGC (Spatial Geometric Consistency), a novel metric that quantifies geometric instability by measuring the divergence of local camera poses estimated from spatially coherent sub-regions.
-  - Validated that SGC effectively detects critical failures (e.g., warping, object impermanence) missed by current benchmarks.
+<div class="timeline">
+  
+  <div class="timeline-item">
+    <span class="timeline-date">2025.02 - 2025.09</span>
+    <div class="timeline-title">Research Intern at Tsinghua University</div>
+    <p>
+      Advised by <a href="...">Prof. Jiwen Lu</a> and mentored by <a href="...">Dr. Wenzhao Zheng</a>.<br>
+      Topic: <b>3D Spatial Geometric Consistency in Video Generation</b>.
+    </p>
+    <ul>
+      <li>Identified that existing fidelity-centric metrics (e.g., FVD) fail to capture geometric distortions.</li>
+      <li>Proposed <b>SGC</b> metric to quantify geometric instability via local camera pose divergence.</li>
+    </ul>
+  </div>
 
-- 2024.09 - Present: Research Intern at Tongji University
-  - Advised by [Prof. Yi Bin](https://scholar.google.com/citations?user=KDdkZKQAAAAJ&hl=zh-CN&oi=ao).
-  - _Topic_: Open-Vocabulary 3D Scene Understanding.
-  - Investigated the geometric disconnect in VLM-based 3D segmentation. Developed a geometric distillation method to align 2D semantic richness with 3D structural priors, effectively solving the noise and fragmentation issues in feature lifting.
+  <div class="timeline-item">
+    <span class="timeline-date">2024.09 - Present</span>
+    <div class="timeline-title">Research Intern at Tongji University</div>
+    <p>
+      Advised by <a href="...">Prof. Yi Bin</a>.<br>
+      Topic: <b>Open-Vocabulary 3D Scene Understanding</b>.
+    </p>
+    <ul>
+      <li>Investigated the geometric disconnect in VLM-based 3D segmentation.</li>
+      <li>Developed <b>GeoPurify</b> to align 2D semantic richness with 3D structural priors.</li>
+    </ul>
+  </div>
+
+</div>
 
 <span id="-honors-and-awards"></span>
 
