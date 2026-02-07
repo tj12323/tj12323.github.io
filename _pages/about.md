@@ -28,10 +28,14 @@ Specifically, my future research at Fudan University will focus on:
 - Next-Gen Diffusion Architectures: Developing efficient and unified architectures for high-fidelity, long-term, and interactive video generation.
 - Visual Generation for AGI: Exploring the synergy between generation and perception, particularly using Reinforcement Learning to align generative models with physical laws and leveraging video generation to enhance multimodal understanding.
 
+<span id="-news"></span>
+
 # 🔥 News
 
 - _2026.01_: &nbsp;🎉🎉 One paper (GeoPurify) has been accepted by ICLR 2026!
 - _2025.09_: &nbsp;🎉🎉 I successfully received the admission offer for the Direct Ph.D. program at Fudan University.
+
+<span id="-publications"></span>
 
 # 📝 Publications
 
@@ -55,6 +59,8 @@ _The 14th International Conference on Learning Representations (ICLR), 2026_
 </div>
 </div>
 
+<span id="-research-experience"></span>
+
 # 💻 Research Experience
 
 - 2025.02 - 2025.09: Research Intern at Tsinghua University
@@ -68,6 +74,8 @@ _The 14th International Conference on Learning Representations (ICLR), 2026_
   - Advised by [Prof. Yi Bin](https://scholar.google.com/citations?user=KDdkZKQAAAAJ&hl=zh-CN&oi=ao).
   - _Topic_: Open-Vocabulary 3D Scene Understanding.
   - Investigated the geometric disconnect in VLM-based 3D segmentation. Developed a geometric distillation method to align 2D semantic richness with 3D structural priors, effectively solving the noise and fragmentation issues in feature lifting.
+
+<span id="-honors-and-awards"></span>
 
 # 🎖 Honors and Awards
 
