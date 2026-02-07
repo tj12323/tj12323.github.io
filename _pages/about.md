@@ -43,24 +43,43 @@ Specifically, my future research at Fudan University will focus on:
 
 # 📝 Publications
 
-<div class='paper-box'><div class='paper-box-image'><div><div class="badge">ICLR 2026</div><img src='images/geopurify.png' alt="GeoPurify" width="100%"></div></div>
-<div class='paper-box-text' markdown="1">
+<div class='paper-box'>
+  <div class='paper-box-image'>
+    <div>
+      <div class="badge">ICLR 2026</div>
+      <img src='images/geopurify.png' alt="GeoPurify" width="100%">
+    </div>
+  </div>
+  
+  <div class='paper-box-text'>
+    
+    <div class="paper-title">
+      GeoPurify: A Data-Efficient Geometric Distillation Framework for Open-Vocabulary 3D Segmentation
+    </div>
+    
+    <div class="paper-authors">
+      <strong>Weijia Dou</strong>, Xu Zhang, Yi Bin*, Jian Liu, Bo Peng, Guoqing Wang, Yang Yang, Heng Tao Shen
+    </div>
+    
+    <div class="paper-venue">
+      The 14th International Conference on Learning Representations (ICLR), 2026
+    </div>
+    
+    <div class="paper-links">
+      <a href="https://arxiv.org/abs/2510.02186"><img src="https://img.shields.io/badge/arXiv-2510.02186-b31b1b.svg?style=flat-square" alt="arXiv"></a>
+      <a href="https://openreview.net/forum?id=mN49LupE8l"><img src="https://img.shields.io/badge/OpenReview-Paper-8c1b13.svg?style=flat-square" alt="OpenReview"></a>
+      <a href="https://github.com/tj12323/GeoPurify"><img src="https://img.shields.io/badge/Github-Code-black?style=flat-square&logo=github" alt="GitHub"></a>
+    </div>
 
-GeoPurify: A Data-Efficient Geometric Distillation Framework for Open-Vocabulary 3D Segmentation
+    <div class="paper-abstract">
+      <ul>
+        <li>Identified the limitation of feature inconsistency when projecting 2D VLM features to 3D.</li>
+        <li>Proposed <b>GeoPurify</b> to recover latent geometric structures via Geometric Contrastive Distillation.</li>
+        <li>Achieved SOTA performance using only <b>~1.5%</b> of annotated data.</li>
+      </ul>
+    </div>
 
-Weijia Dou, Xu Zhang, Yi Bin\*, Jian Liu, Bo Peng, Guoqing Wang, Yang Yang, Heng Tao Shen
-
-_The 14th International Conference on Learning Representations (ICLR), 2026_
-
-<a href="https://arxiv.org/abs/2510.02186"><img src="https://img.shields.io/badge/arXiv-2510.02186-b31b1b.svg?style=flat-square" alt="arXiv"></a>
-<a href="https://openreview.net/forum?id=mN49LupE8l"><img src="https://img.shields.io/badge/OpenReview-Paper-8c1b13.svg?style=flat-square" alt="OpenReview"></a>
-<a href="https://github.com/tj12323/GeoPurify"><img src="https://img.shields.io/badge/Github-Code-black?style=flat-square&logo=github" alt="GitHub"></a>
-
-- Identified the limitation of feature inconsistency when projecting 2D VLM features to 3D space.
-- Proposed GeoPurify, a data-efficient framework that recovers latent geometric structures from noisy semantic features via Geometric Contrastive Distillation.
-- Achieved state-of-the-art performance on major benchmarks using only ~1.5% of annotated data.
-
-</div>
+  </div>
 </div>
 
 <span id="-research-experience"></span>
@@ -73,7 +92,7 @@ _The 14th International Conference on Learning Representations (ICLR), 2026_
     <span class="timeline-date">2025.02 - 2025.09</span>
     <div class="timeline-title">Research Intern at Tsinghua University</div>
     <p>
-      Advised by <a href="https://scholar.google.com/citations?user=TN8uDQoAAAAJ&hl=zh-CN&oi=ao">Prof. Jiwen Lu</a> and mentored by <a href="https://wzzheng.net/">Dr. Wenzhao Zheng</a>.<br>
+      Advised by <a href="https://scholar.google.com/citations?user=TN8uDQoAAAAJ" target="_blank">Prof. Jiwen Lu</a> and mentored by <a href="https://wzzheng.net/" target="_blank">Dr. Wenzhao Zheng</a>.<br>
       Topic: <b>3D Spatial Geometric Consistency in Video Generation</b>.
     </p>
     <ul>
@@ -86,7 +105,7 @@ _The 14th International Conference on Learning Representations (ICLR), 2026_
     <span class="timeline-date">2024.09 - Present</span>
     <div class="timeline-title">Research Intern at Tongji University</div>
     <p>
-      Advised by <a href="https://scholar.google.com/citations?user=KDdkZKQAAAAJ&hl=zh-CN&oi=ao">Prof. Yi Bin</a>.<br>
+      Advised by <a href="https://scholar.google.com/citations?user=KDdkZKQAAAAJ" target="_blank">Prof. Yi Bin</a>.<br>
       Topic: <b>Open-Vocabulary 3D Scene Understanding</b>.
     </p>
     <ul>

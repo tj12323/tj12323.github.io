@@ -144,80 +144,132 @@ a:hover {
   text-decoration: none;
 }
 
-/* 2. Paper Box 卡片化设计 (让论文看起来像卡片) */
+/* 2. Paper Box 卡片化设计 (紧凑优化版) */
 .paper-box {
   display: flex;
   flex-wrap: wrap;
   background: #ffffff;
-  border: 1px solid #eaeaea;
-  border-radius: 10px; /* 圆角 */
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02); /* 极淡的阴影 */
-  margin-bottom: 2rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.03);
+  margin-bottom: 1.5rem; /* 减小卡片间距 */
   overflow: hidden;
-  transition: all 0.3s ease; /* 鼠标悬停动画 */
+  transition: all 0.3s ease;
 }
 
 .paper-box:hover {
-  transform: translateY(-5px); /* 悬停时微微上浮 */
-  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.08);
-  border-color: #0056b3; /* 悬停时边框变色 */
+  transform: translateY(-3px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.08);
+  border-color: #0056b3;
 }
 
 .paper-box-image {
-  flex: 0 0 280px; /* 图片区域固定宽度 */
+  flex: 0 0 240px; /* 缩小图片宽度，给文字腾空间 */
   position: relative;
   overflow: hidden;
   border-right: 1px solid #f0f0f0;
+  display: flex;
+  align-items: center; /* 图片垂直居中 */
+  background: #f9f9f9;
 }
 
-/* 移动端适配：手机上图片在上面，文字在下面 */
 @media (max-width: 768px) {
   .paper-box-image {
     flex: 0 0 100%;
     border-right: none;
     border-bottom: 1px solid #f0f0f0;
-    height: 200px;
+    height: 180px;
   }
 }
 
 .paper-box-image img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* 保证图片填满且不变形 */
+  object-fit: cover;
   transition: transform 0.5s ease;
 }
 
 .paper-box:hover .paper-box-image img {
-  transform: scale(1.05); /* 悬停时图片轻微放大 */
+  transform: scale(1.05);
 }
 
-/* 论文年份/会议徽章 */
 .badge {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  background: rgba(0, 0, 0, 0.7);
+  top: 8px;
+  left: 8px;
+  background: rgba(0, 54, 159, 0.85); /* 深蓝色背景 */
   color: #fff;
-  padding: 4px 10px;
-  font-size: 0.75rem;
-  border-radius: 4px;
+  padding: 3px 8px;
+  font-size: 0.7rem;
+  border-radius: 3px;
   font-weight: 600;
   z-index: 2;
-  backdrop-filter: blur(4px);
+  backdrop-filter: blur(2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .paper-box-text {
   flex: 1;
-  padding: 1.5rem 2rem;
-  font-size: 0.95rem;
+  padding: 1rem 1.2rem; /* 大幅减小内边距 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-/* 论文标题加粗放大 */
-.paper-box-text p:first-child strong {
+/* 专用排版样式 */
+.paper-title {
+  font-family: "Inter", sans-serif; /* 标题改用无衬线体更现代 */
   font-size: 1.1rem;
-  color: #000;
-  display: block;
+  font-weight: 700;
+  color: #1a1a1a;
+  line-height: 1.3;
+  margin-bottom: 0.3rem;
+  transition: color 0.2s;
+}
+
+.paper-box:hover .paper-title {
+  color: #0056b3; /* 悬停时标题变蓝 */
+}
+
+.paper-authors {
+  font-size: 0.9rem;
+  color: #555;
+  margin-bottom: 0.2rem;
+  line-height: 1.4;
+}
+
+.paper-venue {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #0056b3; /* 会议名用主题色 */
   margin-bottom: 0.5rem;
+  font-style: italic;
+}
+
+.paper-links {
+  margin-bottom: 0.6rem;
+}
+.paper-links img {
+  height: 20px; /* 徽章稍微缩小 */
+}
+
+.paper-abstract {
+  font-size: 0.85rem; /* 摘要字号调小 */
+  color: #666;
+  line-height: 1.5;
+  background: #f8f9fa;
+  padding: 0.6rem 0.8rem;
+  border-radius: 4px;
+  border-left: 3px solid #e0e0e0;
+}
+
+.paper-abstract ul {
+  margin: 0;
+  padding-left: 1rem;
+}
+
+.paper-abstract li {
+  margin-bottom: 0.2rem; /* 列表项更紧凑 */
 }
 
 /* 3. News 区域优化 (带滚动条的盒子，防止太长) */
