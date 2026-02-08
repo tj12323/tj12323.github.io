@@ -292,30 +292,69 @@ a:hover {
   font-size: 0.9rem;
 }
 
-/* 4. Research Experience 时间轴样式 */
-/* 使用方法：在Markdown列表外包一层 <div class="timeline"> */
+/* 4. Research Experience 时间轴样式 (Logo 增强版) */
 .timeline {
   position: relative;
   border-left: 2px solid #e0e0e0;
   margin-left: 10px;
-  padding-left: 20px;
+  padding-left: 30px; /* 给圆点留出更多空间 */
 }
 
 .timeline-item {
   position: relative;
-  margin-bottom: 2rem;
+  margin-bottom: 2.5rem;
+  display: flex; /* 启用弹性布局：左边Logo，右边文字 */
+  align-items: flex-start; /* 顶部对齐 */
+  gap: 20px; /* Logo和文字的间距 */
 }
 
+/* 时间轴上的圆点 */
 .timeline-item:before {
   content: "";
   position: absolute;
-  left: -27px; /* 圆点位置 */
+  left: -37px; /* 调整圆点位置以对齐线 */
   top: 5px;
   width: 12px;
   height: 12px;
   background: #fff;
   border: 2px solid #0056b3;
   border-radius: 50%;
+  z-index: 1;
+}
+
+/* 校徽 Logo 样式 */
+.timeline-logo {
+  flex: 0 0 60px; /* 固定 Logo 宽度 */
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 50%; /* 圆形 Logo 框 */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timeline-logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain; /* 保证 Logo 完整显示不拉伸 */
+}
+
+/* 右侧文字内容区域 */
+.timeline-content {
+  flex: 1; /* 占据剩余空间 */
+}
+
+/* 手机端适配：Logo 变小 */
+@media (max-width: 768px) {
+  .timeline-logo {
+    flex: 0 0 45px;
+    width: 45px;
+    height: 45px;
+  }
 }
 
 .timeline-date {
@@ -330,7 +369,7 @@ a:hover {
   font-size: 1.1rem;
   font-weight: 700;
   color: #222;
-  margin-bottom: 0.2rem;
+  margin-bottom: 0.5rem;
 }
 
 /* 5. 徽章微调 */
@@ -343,4 +382,37 @@ img[src*="shields.io"] {
 
 img[src*="shields.io"]:hover {
   opacity: 0.8;
+}
+
+/* 6. About Me 个人简介增强样式 */
+.profile-intro {
+  background: #fdfdfd; /* 极淡的灰白背景 */
+  border-radius: 8px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-left: 5px solid #0056b3; /* 左侧蓝色装饰线 */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  font-size: 1rem;
+}
+
+.intro-row {
+  display: flex;
+  margin-bottom: 0.8rem;
+  align-items: flex-start;
+}
+
+.intro-icon {
+  flex: 0 0 30px;
+  font-size: 1.2rem;
+  margin-top: 2px; /* 图标微调对齐文字 */
+}
+
+.intro-text {
+  flex: 1;
+}
+
+/* 强调文字 */
+.highlight-text {
+  color: #0056b3;
+  font-weight: 600;
 }

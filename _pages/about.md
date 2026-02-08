@@ -17,16 +17,36 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-I am a Senior undergraduate student (Class of 2026) majoring in Automation at Guohao College (Honors College), Tongji University.
+<div class="profile-intro">
+  <div class="intro-row">
+    <div class="intro-icon">🎓</div>
+    <div class="intro-text">
+      Senior undergraduate (Class of 2026) in <b>Automation</b> at <b>Guohao College</b>, <b>Tongji University</b>.
+    </div>
+  </div>
+  
+  <div class="intro-row">
+    <div class="intro-icon">🔜</div>
+    <div class="intro-text">
+      Incoming <b>Direct Ph.D. student</b> at <b class="highlight-text">Fudan University</b> (Fall 2026), advised by <a href="https://sites.google.com/site/zhusiyucs/home">Prof. Siyu Zhu</a>.
+    </div>
+  </div>
 
-I have been admitted to the Direct Ph.D. program at Fudan University (starting Fall 2026), where I will be advised by [Prof. Siyu Zhu](https://sites.google.com/site/zhusiyucs/home).
+  <div class="intro-row">
+    <div class="intro-icon">🧠</div>
+    <div class="intro-text">
+      <b>Research Interests:</b> Generative World Models & 3D Vision. <br>
+      Aiming to build <i>Interactive Video Models</i> that physically understand and simulate the real world.
+    </div>
+  </div>
 
-My research interests lie at the intersection of Generative World Models and 3D Vision. I aim to build Interactive Video Models that can physically understand and simulate the real world.
-
-Specifically, my future research at Fudan University will focus on:
-
-- Next-Gen Diffusion Architectures: Developing efficient and unified architectures for high-fidelity, long-term, and interactive video generation.
-- Visual Generation for AGI: Exploring the synergy between generation and perception, particularly using Reinforcement Learning to align generative models with physical laws and leveraging video generation to enhance multimodal understanding.
+  <div class="intro-row">
+    <div class="intro-icon">🎯</div>
+    <div class="intro-text">
+      <b>Future Focus:</b> Next-Gen Diffusion Architectures (Uniform/Discrete) & Visual Generation for AGI (RL + Video).
+    </div>
+  </div>
+</div>
 
 <span id="-news"></span>
 
@@ -89,29 +109,39 @@ Specifically, my future research at Fudan University will focus on:
 <div class="timeline">
   
   <div class="timeline-item">
-    <span class="timeline-date">2025.02 - 2025.09</span>
-    <div class="timeline-title">Research Intern at Tsinghua University</div>
-    <p>
-      Advised by <a href="https://scholar.google.com/citations?user=TN8uDQoAAAAJ" target="_blank">Prof. Jiwen Lu</a> and mentored by <a href="https://wzzheng.net/" target="_blank">Dr. Wenzhao Zheng</a>.<br>
-      Topic: <b>3D Spatial Geometric Consistency in Video Generation</b>.
-    </p>
-    <ul>
-      <li>Identified that existing fidelity-centric metrics (e.g., FVD) fail to capture geometric distortions.</li>
-      <li>Proposed <b>SGC</b> metric to quantify geometric instability via local camera pose divergence.</li>
-    </ul>
+    <div class="timeline-logo">
+      <img src="images/tsinghua.png" alt="Tsinghua University">
+    </div>
+    <div class="timeline-content">
+      <span class="timeline-date">2025.02 - 2025.09</span>
+      <div class="timeline-title">Research Intern at Tsinghua University</div>
+      <p>
+        Advised by <a href="https://scholar.google.com/citations?user=TN8uDQoAAAAJ" target="_blank">Prof. Jiwen Lu</a> and mentored by <a href="https://wzzheng.net/" target="_blank">Dr. Wenzhao Zheng</a>.<br>
+        Topic: <b>3D Spatial Geometric Consistency in Video Generation</b>.
+      </p>
+      <ul>
+        <li>Identified that existing fidelity-centric metrics (e.g., FVD) fail to capture geometric distortions.</li>
+        <li>Proposed <b>SGC</b> metric to quantify geometric instability via local camera pose divergence.</li>
+      </ul>
+    </div>
   </div>
 
   <div class="timeline-item">
-    <span class="timeline-date">2024.09 - Present</span>
-    <div class="timeline-title">Research Intern at Tongji University</div>
-    <p>
-      Advised by <a href="https://scholar.google.com/citations?user=KDdkZKQAAAAJ" target="_blank">Prof. Yi Bin</a>.<br>
-      Topic: <b>Open-Vocabulary 3D Scene Understanding</b>.
-    </p>
-    <ul>
-      <li>Investigated the geometric disconnect in VLM-based 3D segmentation.</li>
-      <li>Developed <b>GeoPurify</b> to align 2D semantic richness with 3D structural priors.</li>
-    </ul>
+    <div class="timeline-logo">
+      <img src="images/tongji.svg" alt="Tongji University">
+    </div>
+    <div class="timeline-content">
+      <span class="timeline-date">2024.09 - Present</span>
+      <div class="timeline-title">Research Intern at Tongji University</div>
+      <p>
+        Advised by <a href="https://scholar.google.com/citations?user=KDdkZKQAAAAJ" target="_blank">Prof. Yi Bin</a>.<br>
+        Topic: <b>Open-Vocabulary 3D Scene Understanding</b>.
+      </p>
+      <ul>
+        <li>Investigated the geometric disconnect in VLM-based 3D segmentation.</li>
+        <li>Developed <b>GeoPurify</b> to align 2D semantic richness with 3D structural priors.</li>
+      </ul>
+    </div>
   </div>
 
 </div>
