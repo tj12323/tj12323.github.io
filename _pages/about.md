@@ -17,40 +17,52 @@ redirect_from:
 
 <span class='anchor' id='about-me'></span>
 
-<div class="profile-intro">
-  <div class="intro-row">
-    <div class="intro-icon">🎓</div>
-    <div class="intro-text">
-      B.Eng. in <b>Automation</b> at <b>Tongji University</b> (Class of 2026).
-    </div>
-  </div>
-  
-  <div class="intro-row">
-    <div class="intro-icon">🔜</div>
-    <div class="intro-text">
-      Incoming <b>Direct Ph.D. student</b> at <b class="highlight-text">Fudan University</b> (Fall 2026), advised by <a href="https://sites.google.com/site/zhusiyucs/home">Prof. Siyu Zhu</a>.
+<section class="hero-grid">
+  <div class="hero-signature">
+    <p class="hero-kicker">AI RESEARCH | WORLD MODELS | 3D VISION</p>
+    <p class="hero-value">Building geometrically grounded video intelligence for interactive understanding and generation.</p>
+    <div class="signal-row">
+      <span class="signal-chip">Generative World Models</span>
+      <span class="signal-chip">3D Vision</span>
+      <span class="signal-chip">Interactive Video</span>
     </div>
   </div>
 
-  <div class="intro-row">
-    <div class="intro-icon">🧠</div>
-    <div class="intro-text">
-      <b>Research:</b> Generative world models and 3D vision, with a focus on <i>interactive video models</i> that are geometrically and physically consistent.
+  <div class="profile-intro">
+    <div class="intro-row">
+      <div class="intro-icon">EDU</div>
+      <div class="intro-text">
+        B.Eng. in <b>Automation</b> at <b>Tongji University</b> (Class of 2026).
+      </div>
     </div>
-  </div>
 
-  <div class="intro-row">
-    <div class="intro-icon">🤝</div>
-    <div class="intro-text">
-      Open to collaboration on video generation and world model; please reach out for citation questions or joint research.
+    <div class="intro-row">
+      <div class="intro-icon">PHD</div>
+      <div class="intro-text">
+        Incoming <b>Direct Ph.D. student</b> at <b class="highlight-text">Fudan University</b> (Fall 2026), advised by <a href="https://sites.google.com/site/zhusiyucs/home">Prof. Siyu Zhu</a>.
+      </div>
+    </div>
+
+    <div class="intro-row">
+      <div class="intro-icon">FOCUS</div>
+      <div class="intro-text">
+        <b>Research:</b> Generative world models and 3D vision, with a focus on <i>interactive video models</i> that are geometrically and physically consistent.
+      </div>
+    </div>
+
+    <div class="intro-row">
+      <div class="intro-icon">OPEN</div>
+      <div class="intro-text">
+        Open to collaboration on video generation and world model; please reach out for citation questions or joint research.
+      </div>
     </div>
   </div>
-</div>
+</section>
 
 <span id="-news"></span>
 
-# 🔥 News
-
+# Research Updates
+<p class="section-lead">Recent milestones relevant for citation and collaboration.</p>
 <div class="news-box">
 <ul>
   <li><i>2026.01</i>: <b>GeoPurify</b> was accepted to <b>ICLR 2026</b>.</li>
@@ -60,9 +72,9 @@ redirect_from:
 
 <span id="-publications"></span>
 
-# 📝 Publications
-
-<div class='paper-box'>
+# Selected Publication
+<p class="section-lead">Primary evidence block. If you plan to cite or collaborate, start here.</p>
+<div class='paper-box paper-box--featured'>
   <div class='paper-box-image'>
     <div>
       <div class="badge">ICLR 2026</div>
@@ -84,10 +96,10 @@ redirect_from:
       The 14th International Conference on Learning Representations (ICLR), 2026
     </div>
     
-    <div class="paper-links">
-      <a href="https://arxiv.org/abs/2510.02186"><img src="https://img.shields.io/badge/arXiv-2510.02186-b31b1b.svg?style=flat-square" alt="arXiv"></a>
-      <a href="https://openreview.net/forum?id=mN49LupE8l"><img src="https://img.shields.io/badge/OpenReview-Paper-8c1b13.svg?style=flat-square" alt="OpenReview"></a>
-      <a href="https://github.com/tj12323/GeoPurify"><img src="https://img.shields.io/badge/Github-Code-black?style=flat-square&logo=github" alt="GitHub"></a>
+    <div class="meta-links">
+      <a class="meta-link" href="https://arxiv.org/abs/2510.02186">arXiv</a>
+      <a class="meta-link" href="https://openreview.net/forum?id=mN49LupE8l">OpenReview</a>
+      <a class="meta-link" href="https://github.com/tj12323/GeoPurify">Code</a>
     </div>
     <p class="paper-cta">For citation or collaboration, start with arXiv, then OpenReview and code.</p>
 
@@ -104,8 +116,7 @@ redirect_from:
 
 <span id="-research-experience"></span>
 
-# 💻 Research Experience
-
+# Research Experience
 <div class="timeline">
   
   <div class="timeline-item">
@@ -148,8 +159,7 @@ redirect_from:
 
 <span id="-honors-and-awards"></span>
 
-# 🎖 Honors and Awards
-
+# Honors and Awards
 ### Scholarships
 
 - _2025_, Xiaomi Scholarship (Awarded to excellent students in technology fields)
@@ -162,3 +172,4 @@ redirect_from:
 - _2024_, "Star" Level Award (First Prize), The 18th "Challenge Cup" National Undergraduate Curricular Academic Science and Technology Works Competition ("Black Technology" Track).
 - _2024_, Second Prize, The 7th National Undergraduate Embedded Chip and System Design Competition (FPGA Track).
 - _2024_, Most Popular Project, The 17th National Conference on Undergraduate Innovation and Entrepreneurship.
+
