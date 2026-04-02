@@ -150,14 +150,14 @@ redirect_from:
 
 # 🎖 Honors and Awards
 
-Scholarships
+### Scholarships
 
 - _2025_, Xiaomi Scholarship (Awarded to excellent students in technology fields)
 - _2024_, National Scholarship (Highest Honor for Undergraduates in China, Top 0.2%)
 - _2024_, Tongji Qidi Scholarship (Top 20 students in the college)
 - _2023 - 2025_, Merit Student of Tongji University (Awarded for 3 consecutive years)
 
-Competitions
+### Competitions
 
 - _2024_, "Star" Level Award (First Prize), The 18th "Challenge Cup" National Undergraduate Curricular Academic Science and Technology Works Competition ("Black Technology" Track).
 - _2024_, Second Prize, The 7th National Undergraduate Embedded Chip and System Design Competition (FPGA Track).
