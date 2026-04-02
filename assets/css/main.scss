@@ -134,7 +134,10 @@ $space-section: clamp(2.4rem, calc(1.8rem + 2.2vw), 4rem);
 body {
   font-family: $global-font-family;
   color: $home-text-default;
-  line-height: 1.8;
+  font-size: 1rem;
+  line-height: 1.72;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
 }
 
 h1,
@@ -153,6 +156,8 @@ h6 {
 .page__content > h1 {
   margin-top: $space-section;
   margin-bottom: $space-md;
+  font-size: clamp(1.65rem, calc(1.35rem + 1.1vw), 2.35rem);
+  letter-spacing: -0.012em;
   line-height: 1.2;
 }
 
@@ -169,11 +174,34 @@ h6 {
   background: mix(#fff, $home-accent, 35%);
 }
 
+.page__content > h3 {
+  font-family: $global-font-family;
+  font-size: clamp(0.85rem, calc(0.8rem + 0.2vw), 0.95rem);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $home-text-muted;
+  margin-top: $space-md;
+  margin-bottom: $space-xs;
+}
+
 .page__content > .profile-intro,
 .page__content > .news-box,
 .page__content > .paper-box,
 .page__content > .timeline {
   margin-bottom: $space-lg;
+}
+
+.page__content > p,
+.page__content > ul,
+.page__content > ol {
+  max-width: 72ch;
+}
+
+.page__content p,
+.page__content li {
+  font-size: 1rem;
+  line-height: 1.68;
 }
 
 a {
@@ -265,10 +293,11 @@ a:hover {
 }
 
 .paper-title {
-  font-family: $global-font-family;
+  font-family: $header-font-family;
   font-size: clamp(1.05rem, calc(0.95rem + 0.4vw), 1.28rem);
   font-weight: 700;
   color: $home-text-strong;
+  letter-spacing: -0.005em;
   line-height: 1.3;
   margin: 0;
   transition: color 0.2s ease;
@@ -281,14 +310,16 @@ a:hover {
 .paper-authors {
   font-size: clamp(0.89rem, calc(0.86rem + 0.12vw), 0.95rem);
   color: $home-text-default;
+  font-weight: 400;
   margin: 0;
-  line-height: 1.4;
+  line-height: 1.55;
 }
 
 .paper-venue {
   font-size: clamp(0.84rem, calc(0.82rem + 0.08vw), 0.9rem);
   font-weight: 600;
   color: $home-accent;
+  letter-spacing: 0.01em;
   margin: 0;
   font-style: italic;
 }
@@ -343,6 +374,7 @@ a:hover {
 .news-box li {
   margin-bottom: $space-xs;
   font-size: clamp(0.9rem, calc(0.88rem + 0.1vw), 0.96rem);
+  font-variant-numeric: tabular-nums;
   line-height: 1.55;
 }
 
@@ -424,13 +456,17 @@ a:hover {
   font-size: clamp(0.83rem, calc(0.8rem + 0.1vw), 0.9rem);
   color: $home-text-muted;
   font-weight: 600;
+  letter-spacing: 0.015em;
+  font-variant-numeric: tabular-nums;
   margin-bottom: $space-2xs;
   display: block;
 }
 
 .timeline-title {
+  font-family: $global-font-family;
   font-size: clamp(1rem, calc(0.94rem + 0.24vw), 1.14rem);
-  font-weight: 700;
+  font-weight: 600;
+  letter-spacing: -0.003em;
   color: $home-text-strong;
   margin-bottom: $space-xs;
 }
@@ -438,6 +474,7 @@ a:hover {
 .timeline-content p {
   margin-top: 0;
   margin-bottom: $space-xs;
+  max-width: 68ch;
 }
 
 .timeline-content ul {
@@ -493,5 +530,5 @@ img[src*="shields.io"]:hover {
 
 .highlight-text {
   color: $home-accent;
-  font-weight: 600;
+  font-weight: 700;
 }

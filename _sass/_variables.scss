@@ -6,15 +6,15 @@
    Typography
    ========================================================================== */
 
-$doc-font-size              : 15;
+$doc-font-size              : 16;
 
 /* paragraph indention */
 $paragraph-indent           : false; // true, false (default)
 $indent-var                 : 0.5em;
 
 /* system typefaces */
-$serif                      : "Merriweather", Georgia, Times, serif;
-$sans-serif                 : "Inter", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
+$serif                      : "Source Serif 4", Georgia, Times, serif;
+$sans-serif                 : "IBM Plex Sans", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
 // $sans-serif                 : Georgia, serif, sans-serif;
 
 // $sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
@@ -36,14 +36,14 @@ $header-font-family         : $serif;
 $caption-font-family        : $sans-serif;
 
 /* type scale */
-$type-size-1                : 2.441em;  // ~39.056px
-$type-size-2                : 1.953em;  // ~31.248px
-$type-size-3                : 1.4em;  // ~25.008px
-$type-size-4                : 1.2em;   // ~20px
-$type-size-5                : 1em;      // ~16px
-$type-size-6                : 1em;   // ~12px
-$type-size-7                : 0.6875em; // ~11px
-$type-size-8                : 0.625em;  // ~10px
+$type-size-1                : 2.488em;   // ~39.8px
+$type-size-2                : 1.866em;   // ~29.9px
+$type-size-3                : 1.4em;     // ~22.4px
+$type-size-4                : 1.2em;     // ~19.2px
+$type-size-5                : 1em;       // 16px
+$type-size-6                : 0.875em;   // 14px
+$type-size-7                : 0.75em;    // 12px
+$type-size-8                : 0.6875em;  // 11px
 
 
 /*
