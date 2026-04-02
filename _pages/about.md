@@ -21,7 +21,7 @@ redirect_from:
   <div class="intro-row">
     <div class="intro-icon">🎓</div>
     <div class="intro-text">
-      Senior undergraduate (Class of 2026) in <b>Automation</b> at <b>Guohao College</b>, <b>Tongji University</b>.
+      B.Eng. in <b>Automation</b> at <b>Tongji University</b> (Class of 2026).
     </div>
   </div>
   
@@ -35,15 +35,14 @@ redirect_from:
   <div class="intro-row">
     <div class="intro-icon">🧠</div>
     <div class="intro-text">
-      <b>Research Interests:</b> Generative World Models & 3D Vision. <br>
-      Aiming to build <i>Interactive Video Models</i> that physically understand and simulate the real world.
+      <b>Research:</b> Generative world models and 3D vision, with a focus on <i>interactive video models</i> that are geometrically and physically consistent.
     </div>
   </div>
 
   <div class="intro-row">
-    <div class="intro-icon">🎯</div>
+    <div class="intro-icon">🤝</div>
     <div class="intro-text">
-      <b>Future Focus:</b> Next-Gen Diffusion Architectures (Uniform/Discrete) & Visual Generation for AGI (RL + Video).
+      Open to collaboration on video generation and world model; please reach out for citation questions or joint research.
     </div>
   </div>
 </div>
@@ -54,8 +53,8 @@ redirect_from:
 
 <div class="news-box">
 <ul>
-  <li><i>2026.01</i>: &nbsp;🎉🎉 One paper (<b>GeoPurify</b>) has been accepted by <b>ICLR 2026</b>!</li>
-  <li><i>2025.09</i>: &nbsp;🎉🎉 I successfully received the admission offer for the Direct Ph.D. program at <b>Fudan University</b>.</li>
+  <li><i>2026.01</i>: <b>GeoPurify</b> was accepted to <b>ICLR 2026</b>.</li>
+  <li><i>2025.09</i>: Admitted to the Direct Ph.D. program at <b>Fudan University</b>.</li>
 </ul>
 </div>
 
@@ -90,12 +89,13 @@ redirect_from:
       <a href="https://openreview.net/forum?id=mN49LupE8l"><img src="https://img.shields.io/badge/OpenReview-Paper-8c1b13.svg?style=flat-square" alt="OpenReview"></a>
       <a href="https://github.com/tj12323/GeoPurify"><img src="https://img.shields.io/badge/Github-Code-black?style=flat-square&logo=github" alt="GitHub"></a>
     </div>
+    <p class="paper-cta">For citation or collaboration, start with arXiv, then OpenReview and code.</p>
 
     <div class="paper-abstract">
       <ul>
-        <li>Identified the limitation of feature inconsistency when projecting 2D VLM features to 3D.</li>
-        <li>Proposed <b>GeoPurify</b> to recover latent geometric structures via Geometric Contrastive Distillation.</li>
-        <li>Achieved SOTA performance using only <b>~1.5%</b> of annotated data.</li>
+        <li>Diagnosed feature inconsistency when projecting 2D VLM features into 3D.</li>
+        <li>Proposed <b>GeoPurify</b> with geometric contrastive distillation to recover latent 3D structure.</li>
+        <li>Reached SOTA with only <b>~1.5%</b> annotated data.</li>
       </ul>
     </div>
 
@@ -120,8 +120,8 @@ redirect_from:
         Topic: <b>3D Spatial Geometric Consistency in Video Generation</b>.
       </p>
       <ul>
-        <li>Identified that existing fidelity-centric metrics (e.g., FVD) fail to capture geometric distortions.</li>
-        <li>Proposed <b>SGC</b> metric to quantify geometric instability via local camera pose divergence.</li>
+        <li>Showed that fidelity-centric metrics (e.g., FVD) miss geometric distortions.</li>
+        <li>Proposed <b>SGC</b> to quantify geometric instability via local camera-pose divergence.</li>
       </ul>
     </div>
   </div>
@@ -138,8 +138,8 @@ redirect_from:
         Topic: <b>Open-Vocabulary 3D Scene Understanding</b>.
       </p>
       <ul>
-        <li>Investigated the geometric disconnect in VLM-based 3D segmentation.</li>
-        <li>Developed <b>GeoPurify</b> to align 2D semantic richness with 3D structural priors.</li>
+        <li>Analyzed the geometric gap in VLM-based 3D segmentation.</li>
+        <li>Developed <b>GeoPurify</b> to align 2D semantics with 3D structural priors.</li>
       </ul>
     </div>
   </div>

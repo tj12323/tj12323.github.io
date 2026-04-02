@@ -40,49 +40,6 @@
 @import "vendor/magnific-popup/magnific-popup";
 @import "print";
 
-// .paper-box {
-//   display: flex;
-//   justify-content: left;
-//   align-items: center;
-//   flex-direction: row;
-//   flex-wrap: wrap;
-//   border-bottom: 1px #efefef solid;
-//   padding: 2em 0 2em 0;
-
-//   .paper-box-image {
-//     justify-content: center;
-//     display: flex;
-//     width: 100%;
-//     order: 2;
-//     img {
-//       max-width: 400px;
-//       box-shadow: 3px 3px 6px #888;
-//       object-fit: cover;
-//     }
-//   }
-
-//   .paper-box-text {
-//     max-width: 100%;
-//     order: 1;
-//   }
-
-//   @include breakpoint($medium) {
-//     .paper-box-image {
-//       justify-content: left;
-//       min-width: 200px;
-//       max-width: 40%;
-//       order: 1;
-//     }
-
-//     .paper-box-text {
-//       justify-content: left;
-//       padding-left: 2em;
-//       max-width: 60%;
-//       order: 2;
-//     }
-//   }
-// }
-
 $scroll_offset: 2em;
 h1:before,
 .anchor:before {
@@ -93,17 +50,6 @@ h1:before,
   height: $scroll_offset;
   margin-top: -$scroll_offset;
 }
-
-// .badge {
-//   padding-left: 1rem;
-//   padding-right: 1rem;
-//   position: absolute;
-//   margin-top: 0.5em;
-//   margin-left: -0.5em;
-//   color: white;
-//   background-color: #00369f;
-//   font-size: 0.8em;
-// }
 
 /* =========================================
    HOMEPAGE NORMALIZED STYLES
@@ -121,8 +67,8 @@ $home-text-default: $text-color;
 $home-text-muted: mix(#fff, $text-color, 24%);
 $home-radius-sm: $border-radius;
 $home-radius-md: $border-radius * 2;
-$home-shadow-1: 0 2px 5px rgba(#000, 0.03);
-$home-shadow-2: 0 8px 15px rgba(#000, 0.08);
+$home-shadow-1: 0 1px 3px rgba(#000, 0.04);
+$home-shadow-2: 0 4px 10px rgba(#000, 0.06);
 $space-2xs: clamp(0.3rem, calc(0.25rem + 0.18vw), 0.45rem);
 $space-xs: clamp(0.5rem, calc(0.42rem + 0.28vw), 0.75rem);
 $space-sm: clamp(0.75rem, calc(0.66rem + 0.36vw), 1rem);
@@ -210,7 +156,8 @@ a {
 
 a:hover {
   color: $home-accent-hover;
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 2px;
 }
 
 .paper-box {
@@ -222,16 +169,12 @@ a:hover {
   box-shadow: $home-shadow-1;
   margin-bottom: $space-lg;
   overflow: hidden;
-  transition:
-    transform 0.25s ease,
-    box-shadow 0.25s ease,
-    border-color 0.25s ease;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
 }
 
 .paper-box:hover {
-  transform: translateY(-3px);
   box-shadow: $home-shadow-2;
-  border-color: $home-accent;
+  border-color: $home-border;
 }
 
 .paper-box-image {
@@ -262,25 +205,19 @@ a:hover {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transition: transform 0.5s ease;
-}
-
-.paper-box:hover .paper-box-image img {
-  transform: scale(1.05);
 }
 
 .badge {
   position: absolute;
   top: 8px;
   left: 8px;
-  background: rgba($home-accent, 0.9);
+  background: mix(#fff, $home-accent, 18%);
   color: $home-surface;
   padding: 3px 8px;
   font-size: 0.7rem;
   border-radius: $home-radius-sm;
   font-weight: 600;
   z-index: 2;
-  box-shadow: 0 2px 4px rgba(#000, 0.1);
 }
 
 .paper-box-text {
@@ -335,6 +272,15 @@ a:hover {
   height: 19px;
 }
 
+.paper-cta {
+  margin: 0;
+  padding-left: $space-xs;
+  border-left: 2px solid $home-border;
+  font-size: clamp(0.84rem, calc(0.82rem + 0.08vw), 0.9rem);
+  line-height: 1.5;
+  color: $home-text-muted;
+}
+
 .paper-abstract {
   font-size: clamp(0.84rem, calc(0.81rem + 0.1vw), 0.9rem);
   color: $home-text-muted;
@@ -342,7 +288,7 @@ a:hover {
   background: $home-surface-muted;
   padding: $space-sm;
   border-radius: $home-radius-sm;
-  border-left: 3px solid $home-border;
+  border: 1px solid $home-border-soft;
   margin: 0;
 }
 
@@ -356,12 +302,10 @@ a:hover {
 }
 
 .news-box {
-  max-height: clamp(13rem, 36vh, 18rem);
-  overflow-y: auto;
   padding: $space-md;
   background: $home-surface-muted;
   border-radius: $home-radius-md;
-  border-left: 4px solid $home-accent;
+  border-left: 3px solid $home-accent;
   display: grid;
   row-gap: $space-xs;
 }
@@ -446,10 +390,6 @@ a:hover {
     width: 45px;
     height: 45px;
   }
-
-  .news-box {
-    max-height: none;
-  }
 }
 
 .timeline-date {
@@ -502,8 +442,7 @@ img[src*="shields.io"]:hover {
   border-radius: $home-radius-md;
   padding: clamp(1rem, calc(0.7rem + 1.1vw), 1.6rem);
   margin-bottom: $space-xl;
-  border-left: 5px solid $home-accent;
-  box-shadow: 0 2px 8px rgba(#000, 0.03);
+  border-left: 3px solid $home-accent;
   font-size: 1rem;
 }
 
