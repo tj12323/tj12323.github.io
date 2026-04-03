@@ -61,7 +61,7 @@ redirect_from:
 
 <span id="-news"></span>
 
-# Research Updates
+## Research Updates
 <p class="section-lead">Recent milestones relevant for citation and collaboration.</p>
 <div class="news-box">
 <ul>
@@ -72,13 +72,27 @@ redirect_from:
 
 <span id="-publications"></span>
 
-# Selected Publication
+## Selected Publication
 <p class="section-lead">Primary evidence block. If you plan to cite or collaborate, start here.</p>
 <div class='paper-box paper-box--featured'>
   <div class='paper-box-image'>
     <div>
       <div class="badge">ICLR 2026</div>
-      <img src='images/geopurify.png' alt="GeoPurify" width="100%">
+      <picture>
+        <source
+          type="image/webp"
+          srcset="images/geopurify-480.webp 480w, images/geopurify-768.webp 768w, images/geopurify-1024.webp 1024w"
+          sizes="(max-width: 768px) 100vw, 34vw"
+        >
+        <img
+          src="images/geopurify-1024.png"
+          alt="GeoPurify"
+          width="1024"
+          height="534"
+          loading="lazy"
+          decoding="async"
+        >
+      </picture>
     </div>
   </div>
   
@@ -101,7 +115,6 @@ redirect_from:
       <a class="meta-link" href="https://openreview.net/forum?id=mN49LupE8l">OpenReview</a>
       <a class="meta-link" href="https://github.com/tj12323/GeoPurify">Code</a>
     </div>
-    <p class="paper-cta">For citation or collaboration, start with arXiv, then OpenReview and code.</p>
 
     <div class="paper-abstract">
       <ul>
@@ -116,7 +129,7 @@ redirect_from:
 
 <span id="-research-experience"></span>
 
-# Research Experience
+## Research Experience
 <div class="timeline">
   
   <div class="timeline-item">
@@ -124,12 +137,18 @@ redirect_from:
       <img src="images/tsinghua.png" alt="Tsinghua University">
     </div>
     <div class="timeline-content">
-      <span class="timeline-date">2025.02 - 2025.09</span>
-      <div class="timeline-title">Research Intern at Tsinghua University</div>
-      <p>
-        Advised by <a href="https://scholar.google.com/citations?user=TN8uDQoAAAAJ" target="_blank">Prof. Jiwen Lu</a> and mentored by <a href="https://wzzheng.net/" target="_blank">Dr. Wenzhao Zheng</a>.<br>
-        Topic: <b>3D Spatial Geometric Consistency in Video Generation</b>.
+      <div class="timeline-head">
+        <span class="timeline-date">2025.02 - 2025.09</span>
+        <div class="timeline-title">Research Intern at Tsinghua University</div>
+      </div>
+      <p class="timeline-orgline">
+        Advised by <a href="https://scholar.google.com/citations?user=TN8uDQoAAAAJ" target="_blank" rel="noopener noreferrer">Prof. Jiwen Lu</a> and mentored by <a href="https://wzzheng.net/" target="_blank" rel="noopener noreferrer">Dr. Wenzhao Zheng</a>.
       </p>
+      <p class="timeline-topic">
+        <span class="timeline-topic-pill">Topic</span>
+        <b>3D Spatial Geometric Consistency in Video Generation</b>
+      </p>
+      <div class="timeline-highlights-title">Research Highlights</div>
       <ul>
         <li>Showed that fidelity-centric metrics (e.g., FVD) miss geometric distortions.</li>
         <li>Proposed <b>SGC</b> to quantify geometric instability via local camera-pose divergence.</li>
@@ -142,12 +161,18 @@ redirect_from:
       <img src="images/tongji.svg" alt="Tongji University">
     </div>
     <div class="timeline-content">
-      <span class="timeline-date">2024.09 - Present</span>
-      <div class="timeline-title">Research Intern at Tongji University</div>
-      <p>
-        Advised by <a href="https://scholar.google.com/citations?user=KDdkZKQAAAAJ" target="_blank">Prof. Yi Bin</a>.<br>
-        Topic: <b>Open-Vocabulary 3D Scene Understanding</b>.
+      <div class="timeline-head">
+        <span class="timeline-date">2024.09 - Present</span>
+        <div class="timeline-title">Research Intern at Tongji University</div>
+      </div>
+      <p class="timeline-orgline">
+        Advised by <a href="https://scholar.google.com/citations?user=KDdkZKQAAAAJ" target="_blank" rel="noopener noreferrer">Prof. Yi Bin</a>.
       </p>
+      <p class="timeline-topic">
+        <span class="timeline-topic-pill">Topic</span>
+        <b>Open-Vocabulary 3D Scene Understanding</b>
+      </p>
+      <div class="timeline-highlights-title">Research Highlights</div>
       <ul>
         <li>Analyzed the geometric gap in VLM-based 3D segmentation.</li>
         <li>Developed <b>GeoPurify</b> to align 2D semantics with 3D structural priors.</li>
@@ -159,7 +184,7 @@ redirect_from:
 
 <span id="-honors-and-awards"></span>
 
-# Honors and Awards
+## Honors and Awards
 ### Scholarships
 
 - _2025_, Xiaomi Scholarship (Awarded to excellent students in technology fields)
