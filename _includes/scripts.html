@@ -1,4 +1,49 @@
 <script src="assets/js/main.min.js"></script>
+<script>
+  (function() {
+    function isExternalHttpLink(link) {
+      var href = link.getAttribute("href");
+      var url;
+
+      if (!href || href.charAt(0) === "#") return false;
+      if (/^(mailto:|tel:|javascript:)/i.test(href)) return false;
+
+      try {
+        url = new URL(href, window.location.href);
+      } catch (e) {
+        return false;
+      }
+
+      if (url.protocol !== "http:" && url.protocol !== "https:") return false;
+      return url.host !== window.location.host;
+    }
+
+    function ensureExternalLinksOpenInNewTab() {
+      var links = document.querySelectorAll("a[href]");
+      links.forEach(function(link) {
+        var relTokens;
+        if (!isExternalHttpLink(link)) return;
+
+        link.setAttribute("target", "_blank");
+
+        relTokens = (link.getAttribute("rel") || "")
+          .split(/\s+/)
+          .filter(Boolean);
+
+        if (relTokens.indexOf("noopener") === -1) relTokens.push("noopener");
+        if (relTokens.indexOf("noreferrer") === -1) relTokens.push("noreferrer");
+
+        link.setAttribute("rel", relTokens.join(" "));
+      });
+    }
+
+    if (document.readyState === "loading") {
+      document.addEventListener("DOMContentLoaded", ensureExternalLinksOpenInNewTab);
+    } else {
+      ensureExternalLinksOpenInNewTab();
+    }
+  })();
+</script>
 
 {% include analytics.html %}
 {% include fetch_google_scholar_stats.html %}

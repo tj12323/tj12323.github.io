@@ -15,7 +15,7 @@ redirect_from:
 {% endif %}
 {% assign url = gsDataBaseUrl | append: "google-scholar-stats/gs_data_shieldsio.json" %}
 
-<span class='anchor' id='about-me'></span>
+<div class="anchor" id="about-me" aria-hidden="true"></div>
 
 <section class="hero-grid">
   <div class="hero-signature">
@@ -59,9 +59,13 @@ redirect_from:
   </div>
 </section>
 
-<span id="-news"></span>
+<div class="action-rail" aria-label="Primary actions for citation and collaboration">
+  <a class="action-rail__item" href="#selected-publication">Read Featured Paper</a>
+  <a class="action-rail__item" href="mailto:renrendwj@tongji.edu.cn">Contact by Email</a>
+  <a class="action-rail__item" href="https://scholar.google.com/citations?user=ivv7mSwAAAAJ">Google Scholar</a>
+</div>
 
-## Research Updates
+## Research Updates {#research-updates}
 <p class="section-lead">Recent milestones relevant for citation and collaboration.</p>
 <div class="news-box">
 <ul>
@@ -70,9 +74,7 @@ redirect_from:
 </ul>
 </div>
 
-<span id="-publications"></span>
-
-## Selected Publication
+## Selected Publication {#selected-publication}
 <p class="section-lead">Primary evidence block. If you plan to cite or collaborate, start here.</p>
 <div class='paper-box paper-box--featured'>
   <div class='paper-box-image'>
@@ -127,9 +129,7 @@ redirect_from:
   </div>
 </div>
 
-<span id="-research-experience"></span>
-
-## Research Experience
+## Research Experience {#research-experience}
 <div class="timeline">
   
   <div class="timeline-item">
@@ -182,19 +182,25 @@ redirect_from:
 
 </div>
 
-<span id="-honors-and-awards"></span>
+## Honors and Awards {#honors-and-awards}
+<div class="awards-grid">
+  <section class="awards-group" id="scholarships" aria-labelledby="scholarships-title">
+    <h3 id="scholarships-title">Scholarships</h3>
+    <ul>
+      <li><i>2025</i> Xiaomi Scholarship (Awarded to excellent students in technology fields)</li>
+      <li><i>2024</i> National Scholarship (Highest Honor for Undergraduates in China, Top 0.2%)</li>
+      <li><i>2024</i> Tongji Qidi Scholarship (Top 20 students in the college)</li>
+      <li><i>2023 - 2025</i> Merit Student of Tongji University (Awarded for 3 consecutive years)</li>
+    </ul>
+  </section>
 
-## Honors and Awards
-### Scholarships
-
-- _2025_, Xiaomi Scholarship (Awarded to excellent students in technology fields)
-- _2024_, National Scholarship (Highest Honor for Undergraduates in China, Top 0.2%)
-- _2024_, Tongji Qidi Scholarship (Top 20 students in the college)
-- _2023 - 2025_, Merit Student of Tongji University (Awarded for 3 consecutive years)
-
-### Competitions
-
-- _2024_, "Star" Level Award (First Prize), The 18th "Challenge Cup" National Undergraduate Curricular Academic Science and Technology Works Competition ("Black Technology" Track).
-- _2024_, Second Prize, The 7th National Undergraduate Embedded Chip and System Design Competition (FPGA Track).
-- _2024_, Most Popular Project, The 17th National Conference on Undergraduate Innovation and Entrepreneurship.
+  <section class="awards-group" id="competitions" aria-labelledby="competitions-title">
+    <h3 id="competitions-title">Competitions</h3>
+    <ul>
+      <li><i>2024</i> "Star" Level Award (First Prize), The 18th "Challenge Cup" National Undergraduate Curricular Academic Science and Technology Works Competition ("Black Technology" Track).</li>
+      <li><i>2024</i> Second Prize, The 7th National Undergraduate Embedded Chip and System Design Competition (FPGA Track).</li>
+      <li><i>2024</i> Most Popular Project, The 17th National Conference on Undergraduate Innovation and Entrepreneurship.</li>
+    </ul>
+  </section>
+</div>
 

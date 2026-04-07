@@ -11,7 +11,7 @@
           transform: translate3d(0, 0 , 0);
 
   @include clearfix();
-  margin-bottom: 1em;
+  margin-bottom: 1.2em;
 
   @include breakpoint($large) {
     @include span(2 of 12);
@@ -41,7 +41,7 @@
   p, li {
     font-family: $sans-serif;
     font-size: $type-size-6;
-    line-height: 1.5;
+    line-height: 1.58;
   }
 
   img {
@@ -69,19 +69,25 @@
    Author profile and links
    ========================================================================== */
 .profile_box{
+  display: grid;
+  grid-template-columns: 72px minmax(0, 1fr);
+  gap: 0.75rem;
+  align-items: start;
+  padding: 0.55rem 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+
   @include breakpoint($large) {
     display: block;
+    padding: 0.7rem 0;
   }
-  display: flex;
-  justify-content: flex-start;
-  align-content: flex-start;
-  align-items: center;
 }
 
 .author__avatar {
-  display: table-cell;
-  vertical-align: top;
-  width: 75px;
+  display: block;
+  width: 72px;
   // set width only, for non-square avatars
   // height: 36px;
 
@@ -89,182 +95,116 @@
     display: block;
     width: auto;
     height: auto;
+    margin-bottom: 0.6rem;
   }
 
   img {
-    max-width: 175px;
-    min-width: 75px;
+    max-width: 160px;
+    min-width: 0;
+    padding: 3px;
+    border: 1px solid mix(#fff, $primary-color, 84%);
     border-radius: 50%;
+    box-shadow: none;
 
     @include breakpoint($large) {
-      padding: 5px;
-      border: 1px solid $border-color;
+      margin: 0 auto;
     }
   }
 }
 
 .author__content {
-  display: table-cell;
-  vertical-align: top;
-  padding-left: 10px;
-  min-width: 120px;
+  display: block;
+  padding-left: 0;
+  min-width: 0;
   // padding-right: 25px;
-  line-height: 1;
+  line-height: 1.45;
 
   @include breakpoint($large) {
     display: block;
     width: 100%;
-    padding-left: 0;
-    padding-right: 0;
+    margin-bottom: 0.2rem;
   }
 }
 
 .author__name {
-  margin: 0;
+  margin: 0 0 0.22rem;
 
   @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0.5rem;
   }
 }
 
 .sidebar .author__name {
   @include breakpoint($medium) {
-    font-size: $type-size-3;
+    font-size: 1.32em;
   }
-  font-family: $sans-serif;
-  font-size: $type-size-4;
+  font-family: $header-font-family;
+  font-size: 1.12em;
+  line-height: 1.26;
+  letter-spacing: -0.008em;
 }
 
 .author__bio {
   margin: 0;
+  color: mix(#000, $text-color, 10%);
 
   @include breakpoint($large) {
-    margin-top: 10px;
-    margin-bottom: 20px;
+    margin-top: 0;
+    margin-bottom: 0.75rem;
   }
 }
 
 .author__urls-wrapper {
-  position: relative;
-  display: table-cell;
-  vertical-align: middle;
+  display: block;
   font-family: $sans-serif;
-  z-index: 10;
-  position: relative;
-  margin-left: auto;
-  cursor: pointer;
-
-  li:last-child {
-    a {
-      margin-bottom: 0;
-    }
-  }
-
-  @include breakpoint($large) {
-    display: block;
-  }
-
-  button {
-    margin-bottom: 0;
-    width: 120px;
-    padding: 0.5em;
-    @include breakpoint($large) {
-      display: none;
-    }
-  }
+  margin-left: 0;
 }
 
 .author__urls {
-  display: none;
-  position: absolute;
-  right: 0;
-  margin-top: 15px;
-  padding: 10px;
-  list-style-type: none;
-  border: 1px solid $border-color;
-  border-radius: $border-radius;
-  background: #fff;
-  z-index: -1;
-  box-shadow: 0 0 10px rgba(#000, 0.25);
-  cursor: default;
-
-  @include breakpoint($large) {
-    display: block;
-    position: relative;
-    margin: 0;
-    padding: 0;
-    border: 0;
-    background: transparent;
-    box-shadow: none;
-  }
-
-  &:before {
-    display: block;
-    content: "";
-    position: absolute;
-    top: -11px;
-    left: calc(50% - 10px);
-    width: 0;
-    border-style: solid;
-    border-width: 0 10px 10px;
-    border-color: $border-color transparent;
-    z-index: 0;
-
-    @include breakpoint($large) {
-      display: none;
-    }
-  }
-
-  &:after {
-    display: block;
-    content: "";
-    position: absolute;
-    top: -10px;
-    left: calc(50% - 10px);
-    width: 0;
-    border-style: solid;
-    border-width: 0 10px 10px;
-    border-color: #fff transparent;
-    z-index: 1;
-
-    @include breakpoint($large) {
-      display: none;
-    }
-  }
+  display: grid;
+  gap: 0.16rem;
+  margin: 0;
+  padding: 0.62rem 0 0;
+  list-style: none;
+  border-top: 1px solid mix(#fff, $primary-color, 86%);
 
   li {
-    white-space: nowrap;
+    white-space: normal;
+    margin: 0;
   }
 
   a {
-    display: block;
-    margin-bottom: 5px;
-    padding-right: 5px;
-    padding-top: 2px;
-    padding-bottom: 2px;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.42rem;
+    padding: 0.14rem 0.16rem;
     color: inherit;
-    font-size: $type-size-5;
+    font-size: 0.88rem;
+    border-radius: 4px;
+    overflow-wrap: anywhere;
     text-decoration: none;
 
     &:hover {
+      background: transparent;
+      color: $primary-color;
       text-decoration: underline;
     }
   }
 }
 
-.author__urls_sm{
-  padding: .25em;
-  font-size: 1.75em;
-  display: block;
-  a {
-    color: inherit;
-    text-decoration: none;
-    &:hover {
-      text-decoration: underline;
-    }
-  }
-  @include breakpoint($large) {
-    display: none;
-  }
+.author__meta-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.42rem;
+  padding: 0.1rem 0.18rem;
+  color: mix(#000, $text-color, 8%);
+  font-size: 0.86rem;
+}
+
+.author__summary {
+  margin: 0 0 0.75rem;
+  color: mix(#000, $text-color, 10%);
+  line-height: 1.55;
+  font-size: 0.86rem;
 }
