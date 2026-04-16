@@ -60,11 +60,11 @@ $home-accent-hover: $link-color-hover;
 $home-surface: $background-color;
 $home-surface-muted: mix(#fff, $gray, 92%);
 $home-surface-soft: mix(#fff, $gray, 96%);
-$home-border: mix(#fff, $gray, 74%);
-$home-border-soft: mix(#fff, $gray, 84%);
+$home-border: mix(#000, $gray, 26%);
+$home-border-soft: mix(#000, $gray, 16%);
 $home-text-strong: mix(#000, $text-color, 55%);
 $home-text-default: $text-color;
-$home-text-muted: mix(#fff, $text-color, 19%);
+$home-text-muted: mix(#000, $text-color, 35%);
 $home-radius-sm: $border-radius;
 $home-radius-md: $border-radius * 2;
 $home-shadow-1: 0 1px 3px rgba(#000, 0.04);
@@ -223,11 +223,12 @@ h6 {
 
 .action-rail__item {
   @extend %meta-pill;
+  min-height: 44px;
   text-decoration: none;
   text-transform: none;
   letter-spacing: 0.01em;
   font-size: clamp(0.82rem, calc(0.79rem + 0.12vw), 0.92rem);
-  padding: 0.42rem 0.78rem;
+  padding: 0.42rem 0.9rem;
   border-color: mix(#fff, $home-accent, 66%);
   background: mix(#fff, $home-accent, 95%);
 }
@@ -450,25 +451,36 @@ a:focus-visible,
 }
 
 .news-box {
-  @extend %home-panel;
   max-width: 46rem;
-  padding: $space-md;
-  background: $home-surface;
+  padding: 0;
+  background: transparent;
   display: grid;
   row-gap: $space-xs;
+  border: none;
+  border-radius: 0;
 }
 
 .news-box ul {
   margin: 0;
   padding-left: 1.2rem;
+  list-style-type: none;
+  padding-left: 0;
 }
 
 .news-box li {
-  margin-bottom: $space-xs;
+  margin-bottom: $space-sm;
+  padding-bottom: $space-xs;
+  border-bottom: 1px solid $home-border-soft;
   font-size: clamp(0.92rem, calc(0.89rem + 0.1vw), 0.98rem);
   font-variant-numeric: tabular-nums;
   line-height: 1.6;
   overflow-wrap: anywhere;
+}
+
+.news-box li:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .timeline {
@@ -787,29 +799,32 @@ a:focus-visible,
 
 .awards-grid {
   display: grid;
-  gap: $space-md;
+  gap: $space-lg;
 }
 
 .awards-group {
-  border: 1px solid mix(#fff, $home-accent, 84%);
-  border-radius: $home-radius-sm;
-  padding: $space-sm $space-md;
-  background: #fff;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  background: transparent;
 }
 
 .awards-group h3 {
-  margin: 0 0 $space-xs;
-  font-family: $header-font-family;
-  font-size: clamp(1rem, calc(0.94rem + 0.26vw), 1.16rem);
+  margin: 0 0 $space-sm;
+  font-family: $global-font-family;
+  font-size: 0.75rem;
   font-weight: 700;
-  letter-spacing: -0.008em;
-  text-transform: none;
-  color: $home-text-strong;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: $home-accent-deep;
+  padding-bottom: $space-2xs;
+  border-bottom: 2px solid $home-accent-fog;
+  display: inline-block;
 }
 
 .awards-group ul {
-  margin: 0;
-  padding-left: 1.1rem;
+  margin: $space-sm 0 0;
+  padding-left: 1.2rem;
 }
 
 .awards-group li {
