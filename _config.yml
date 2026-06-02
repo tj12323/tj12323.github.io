@@ -26,6 +26,18 @@ author:
   bio: "B.Eng. @Tongji Univ.<br>Incoming Ph.D. @Fudan Univ."
   location: "Shanghai, China"
   employer:
+  edu_degree: "B.Eng."
+  edu_major: "Automation"
+  edu_university: "Tongji University"
+  edu_class: "2026"
+  phd_status: "Incoming Direct Ph.D. student"
+  phd_university: "Fudan University"
+  phd_start: "Fall 2026"
+  phd_advisor: "Prof. Siyu Zhu"
+  phd_advisor_link: "https://sites.google.com/site/zhusiyucs/home"
+  research_focus: "Generative world models and 3D vision, with a focus on interactive video models that are geometrically and physically consistent."
+  collaboration_status: "Open to collaboration on video generation and world model; please reach out for citation questions or joint research."
+  featured_paper_badge: "ICLR 2026"
   pubmed:
   googlescholar: "https://scholar.google.com/citations?user=ivv7mSwAAAAJ"
   email: "renrendwj@tongji.edu.cn"

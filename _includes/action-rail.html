@@ -1,0 +1,9 @@
+<div class="action-rail" aria-label="Primary actions for citation and collaboration">
+  <a class="action-rail__item" href="#selected-publication">Read Featured Paper</a>
+  {% if site.author.email %}
+  <a class="action-rail__item" href="mailto:{{ site.author.email }}">Contact by Email</a>
+  {% endif %}
+  {% if site.author.googlescholar %}
+  <a class="action-rail__item" href="{{ site.author.googlescholar }}">Google Scholar</a>
+  {% endif %}
+</div>

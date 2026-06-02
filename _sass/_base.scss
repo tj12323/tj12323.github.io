@@ -21,25 +21,43 @@ body {
   }
 }
 
+::selection {
+  background: rgba($primary-color, 0.2);
+  color: inherit;
+}
+
+::-moz-selection {
+  background: rgba($primary-color, 0.2);
+  color: inherit;
+}
+
 h1, h2, h3, h4, h5, h6 {
   margin: 1em 0 0.5em;
   line-height: 1.2;
-  font-family: $header-font-family;
   font-weight: bold;
 }
 
 h1 {
-  // margin: 4em 0 0.5em;
   margin-top: 1em;
   font-size: $type-size-3;
+  font-family: $header-font-family;
 }
 
 h2 {
-  font-size: $type-size-4;
+  font-family: $sans-serif; /* Shift from heavy serif to clean sans-serif */
+  font-size: $type-size-6; /* Much smaller */
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: $primary-color;
+  margin-top: 3.5rem; /* Give sections room to breathe */
+  margin-bottom: 1.5rem;
+  border-bottom: 2px solid $lighter-gray;
+  padding-bottom: 0.5rem;
 }
 
 h3 {
   font-size: $type-size-5;
+  font-family: $header-font-family;
 }
 
 h4 {
