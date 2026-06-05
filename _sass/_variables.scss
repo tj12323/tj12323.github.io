@@ -13,8 +13,8 @@ $paragraph-indent           : false; // true, false (default)
 $indent-var                 : 0.5em;
 
 /* system typefaces */
-$serif                      : "Source Serif 4", Georgia, Times, serif;
-$sans-serif                 : "IBM Plex Sans", "Segoe UI", "Helvetica Neue", Helvetica, sans-serif;
+$serif                      : "Source Serif 4", "Charter", "Iowan Old Style", Georgia, Times, serif;
+$sans-serif                 : "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
 // $sans-serif                 : Georgia, serif, sans-serif;
 
 // $sans-serif                 : -apple-system, ".SFNSText-Regular", "San Francisco", "Roboto", "Segoe UI", "Helvetica Neue", "Lucida Grande", Arial, sans-serif;
@@ -50,20 +50,20 @@ $type-size-8                : 0.6875em;  // 11px
    Colors
    ========================================================================== */
 
-$gray                       : #6b7280;
-$dark-gray                  : #374151;
-$darker-gray                : #111827;
-$light-gray                 : #9ca3af;
-$lighter-gray               : #e5e7eb;
+$gray                       : #64748b;
+$dark-gray                  : #334155;
+$darker-gray                : #0f172a;
+$light-gray                 : #94a3b8;
+$lighter-gray               : #e2e8f0;
 
-$body-color                 : #f9fafb; /* Slight off-white to reduce monotony */
-$background-color           : #f9fafb;
-$code-background-color      : #f3f4f6;
+$body-color                 : #f8fafc; /* Crisp, cool-tinted off-white */
+$background-color           : #f8fafc;
+$code-background-color      : #f1f5f9;
 $code-background-color-dark : $light-gray;
-$text-color                 : #1f2937; /* Richer ink */
-$border-color               : #e5e7eb;
+$text-color                 : #0f172a; /* Deep slate ink */
+$border-color               : #e2e8f0;
 
-$primary-color              : #1e40af; /* Deeper, more confident academic navy */
+$primary-color              : #1e3a8a; /* Deep premium navy/indigo */
 $success-color              : #059669;
 $warning-color              : #d97706;
 $danger-color               : #dc2626;
@@ -149,8 +149,8 @@ $susy: (
    Other
    ========================================================================== */
 
-$border-radius              : 6px;
-$box-shadow                 : 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+$border-radius              : 12px;
+$box-shadow                 : 0 10px 15px -3px rgba(30, 58, 138, 0.08), 0 4px 6px -4px rgba(30, 58, 138, 0.04);
 $navicon-width              : 28px;
 $navicon-height             : 4px;
-$global-transition          : all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+$global-transition          : all 0.4s cubic-bezier(0.16, 1, 0.3, 1);

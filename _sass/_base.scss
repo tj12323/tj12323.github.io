@@ -44,10 +44,8 @@ h1 {
 }
 
 h2 {
-  font-family: $sans-serif; /* Shift from heavy serif to clean sans-serif */
-  font-size: $type-size-6; /* Much smaller */
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
+  font-family: $header-font-family;
+  font-size: $type-size-4; /* Restore confident hierarchy */
   color: $primary-color;
   margin-top: 3.5rem; /* Give sections room to breathe */
   margin-bottom: 1.5rem;

@@ -102,9 +102,10 @@
     max-width: 160px;
     min-width: 0;
     padding: 3px;
-    border: 1px solid mix(#fff, $primary-color, 84%);
-    border-radius: 50%;
-    box-shadow: none;
+    border: none;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 15px -3px rgba(30, 58, 138, 0.08), 0 4px 6px -4px rgba(30, 58, 138, 0.04);
+    background: #fff;
 
     @include breakpoint($large) {
       margin: 0 auto;

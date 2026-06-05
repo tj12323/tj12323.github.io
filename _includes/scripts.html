@@ -42,6 +42,32 @@
     } else {
       ensureExternalLinksOpenInNewTab();
     }
+
+    // Scroll Reveals
+    var revealElements = document.querySelectorAll('.paper-box, .timeline-item, .news-box li, .awards-group li');
+    if (revealElements.length > 0) {
+      var observerOptions = {
+        root: null,
+        rootMargin: '0px 0px -40px 0px',
+        threshold: 0.1
+      };
+
+      var observer = new IntersectionObserver(function(entries, observer) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, observerOptions);
+
+      revealElements.forEach(function(el, index) {
+        el.classList.add('will-reveal');
+        // Adding a slight staggered delay based on DOM order for elements close to each other
+        el.style.transitionDelay = (index % 6) * 0.06 + 's';
+        observer.observe(el);
+      });
+    }
   })();
 </script>
 

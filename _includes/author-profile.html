@@ -20,20 +20,20 @@
 
     <ul class="author__urls social-icons">
       {% if author.location %}
-        <li class="author__meta-item"><i class="fa fa-fw fa-map-marker" aria-hidden="true"></i><span>{{ author.location }}</span></li>
+        <li class="author__meta-item"><i class="ph ph-map-pin" aria-hidden="true"></i><span>{{ author.location }}</span></li>
       {% endif %}
       {% if author.employer %}
-        <li class="author__meta-item"><i class="fa fa-fw fa-building" aria-hidden="true"></i><span>{{ author.employer }}</span></li>
+        <li class="author__meta-item"><i class="ph ph-buildings" aria-hidden="true"></i><span>{{ author.employer }}</span></li>
       {% endif %}
 
       {% if author.email %}
-        <li><a href="mailto:{{ author.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i><span>Email</span></a></li>
+        <li><a href="mailto:{{ author.email }}"><i class="ph ph-envelope-simple" aria-hidden="true"></i><span>Email</span></a></li>
       {% endif %}
       {% if author.googlescholar %}
-        <li><a href="{{ author.googlescholar }}"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i><span>Google Scholar</span></a></li>
+        <li><a href="{{ author.googlescholar }}"><i class="ph ph-graduation-cap" aria-hidden="true"></i><span>Google Scholar</span></a></li>
       {% endif %}
       {% if author.github %}
-        <li><a href="https://github.com/{{ author.github }}"><i class="fab fa-fw fa-github" aria-hidden="true"></i><span>GitHub</span></a></li>
+        <li><a href="https://github.com/{{ author.github }}"><i class="ph ph-github-logo" aria-hidden="true"></i><span>GitHub</span></a></li>
       {% endif %}
       {% if author.dblp %}
         <li><a href="{{ author.dblp }}"><i class="ai ai-dblp ai-fw" aria-hidden="true"></i><span>DBLP</span></a></li>
@@ -42,7 +42,7 @@
         <li><a href="{{ author.orcid }}"><i class="ai ai-orcid-square ai-fw" aria-hidden="true"></i><span>ORCID</span></a></li>
       {% endif %}
       {% if author.uri %}
-        <li><a href="{{ author.uri }}"><i class="fas fa-fw fa-link" aria-hidden="true"></i><span>Website</span></a></li>
+        <li><a href="{{ author.uri }}"><i class="ph ph-link" aria-hidden="true"></i><span>Website</span></a></li>
       {% endif %}
     </ul>
   </div>
